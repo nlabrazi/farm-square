@@ -1,0 +1,62 @@
+.navbar-lewagon {
+  justify-content: space-between;
+  background: white;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}
+
+.nav-item.dropdown {
+	text-align: center;
+}
+
+#logo-farm-square {
+	width: 70px;
+	height:70px;
+}
+
+/* ############################################################### */
+/* ################### Media Queries ############################ */
+
+  @media (max-width: 991px) {
+    .navbar-lewagon {
+      flex-direction: column;
+    }
+    .btn-dropdown {
+    	width: 100%;
+    	text-align: center;
+    	margin:3px 0;
+    }
+
+    .btn-ghost {
+      width: 100%;
+      text-align: center;
+      margin:3px 0;
+    }
+
+    #user-menu {
+    	position: static!important;
+    }
+
+    #user-status {
+    	display:none;
+    }
+
+    #navbarDropdown {
+    	width:100px;
+    }
+
+    #logo-farm-square {
+			width: 100px;
+			height:100px;
+		}
+
+    #navbarSupported {
+			margin:10px 0;
+		}
+  }

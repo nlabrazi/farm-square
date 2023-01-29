@@ -1,0 +1,84 @@
+#contacts-index {
+
+  .pricing-charts-faqs {
+    margin-top: 120px;
+    background: #fafafa;
+    padding: 45px 0 40px;
+  }
+
+  .faq-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    background: #d8fbd9;
+    border-radius: 100%;
+    position: relative;
+  }
+
+  .pricing-charts-faqs .faq-icon i {
+    position: absolute;
+    color: #1bce40;
+    font-size: 26px;
+  }
+
+  .pricing-charts-faqs h3 {
+    font-size: 24px;
+    color: #444;
+    margin-bottom: 70px;
+    margin-top: 40px;
+  }
+
+  .agency-contact-h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+    padding-top: 60px;
+  }
+
+  .agency-contact-form form {
+    width: 550px;
+    margin: 35px auto 0;
+  }
+
+  .agency-contact-form form input[type="text"], .agency-contact-form form input[type="email"], .agency-contact-form form textarea {
+    font-size: 18px;
+    margin-top: 20px;
+    outline: none;
+    color: #888;
+    background: white;
+    padding: 18px 20px;
+    border: 1px solid #cbcdd2;
+    width: 100%;
+    border-radius: 4px;
+    transition: all 0.2s;
+  }
+
+  .agency-alt-contact-info {
+    text-align: center;
+    padding: 80px 0 90px;
+  }
+
+  .agency-alt-contact-info h4 {
+    font-weight: 400;
+  }
+
+  .agency-alt-contact-info h4 i {
+    font-size: 2rem;
+    position: relative;
+    top: 4px;
+    margin-right: 8px;
+  }
+
+  .agency-alt-contact-info p {
+    font-size: 17px;
+  }
+
+  .agency-alt-contact-info p a {
+    color: #3e70ff;
+    transition: all 0.2s;
+  }
+
+
+}

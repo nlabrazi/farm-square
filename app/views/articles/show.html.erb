@@ -1,0 +1,21 @@
+<br>
+<br>
+<div class="container">
+  <article class="blog-post">
+    <div data-aos="zoom-in" class="card mb-3">
+      <div class="row g-0">
+        <div class="col-md-8">
+          <%= cl_image_tag @article.picture.key, class: "card-img-top", alt: "illustration article" %>
+        </div>
+        <div class="col featured-text">
+          <div class="card-body">
+            <h2 class="blog-post-title"><%= @article.title %></h2>
+            <p class="blog-post-meta">Posté le: <%= @article.created_at %> par <%= @user %></p>
+            <p><%= @article.content %></p>
+            <hr>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</div>

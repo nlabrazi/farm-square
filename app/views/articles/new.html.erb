@@ -1,0 +1,12 @@
+<div class="container">
+
+  <h1>Création d'article</h1>
+  <br>
+  <%= simple_form_for @article do |a| %>
+    <%= a.input :title %>
+    <%= a.input :content %>
+    <%= a.input :picture %>
+    <%= a.button :submit, class:'btn-flat' %>
+  <% end %>
+
+</div>

@@ -1,0 +1,43 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <%= link_to "/", class: "navbar-brand" do %>
+  <%= image_tag "logo_F.png", id:"logo-farm-square" %>
+  <% end %>
+
+  <%= link_to "Notre Equipe", team_path, class: "nav-link navbar-a btn-ghost" %>
+  <%= link_to "Nous Contacter", contacts_path, class: "nav-link navbar-a btn-ghost" %>
+  <%= link_to "Blog", blog_path, class: "nav-link navbar-a btn-ghost" %>
+
+  <% if user_signed_in? && current_user.profil_id != 1 %>
+    <%= link_to "Liste des tâches", tasks_path, class: "nav-link navbar-a btn-ghost" %>
+  <% end %>
+
+  <div class=" navbar-collapse" id="navbarSupported">
+    <ul class="navbar-nav mr-auto align-items-center">
+      <% if user_signed_in? %>
+      <li class="nav-item active" id="user-status">
+        <span class="nav-link navbar-collapse collapse"> <%= current_user.email %> </span>
+      </li>
+      <li class="nav-item dropdown">
+        <% if current_user.avatar.attached? %>
+        <%= cl_image_tag current_user.avatar.key, height: 40, width: 40, gravity: :face, class: "dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+        <% else %>
+        <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar-large dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+        <% end %>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" id="user-menu">
+          <%= link_to "Mon Profil", edit_user_registration_path, class: "dropdown-item" %>
+          <% if current_user.profil_id == 3 %>
+          <%= link_to "Administration", rails_admin_path, class: "dropdown-item" %>
+          <%= link_to "Ecrire un article", new_article_path, class: "dropdown-item" %>
+          <% end %>
+          <div class="dropdown-divider"></div>
+          <%= link_to "Deconnexion", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+        </div>
+      </li>
+      <% else %>
+      <li class="nav-item">
+        <%= link_to "Se connecter", new_user_session_path, class: "nav-link" %>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+</div>

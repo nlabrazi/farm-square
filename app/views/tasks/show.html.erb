@@ -1,0 +1,15 @@
+<div class="container">
+	<div class="card">
+		<div class="card-header">
+			<%= @city.name %>
+		</div>
+		<div class="card-body">
+			<h5 class="card-title"><%= @task.title %></h5>
+			<p class="card-text"><%= @task.description %></p>
+			<p class="card-text"> Localisation : <%= @farm.address %></p>
+			<p class="card-text"> Le : <%= @task.start_date.strftime("%d-%m-%Y") %></p>
+			<p class="card-text"> De : <%= @task.start_date.strftime("%H:%M")%> à <%= @task.end_date.strftime("%H:%M")%> </p>
+			<a href="#" class="btn btn-primary">Postuler</a>
+		</div>
+	</div>
+</div>

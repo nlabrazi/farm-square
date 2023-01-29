@@ -1,0 +1,39 @@
+<div class="agency-contact-form mt-5">
+  <h3 class="agency-contact-h3 border-0 text-center">Pour toute demande</h3>
+  <div class="container">
+    <form class="simple_form new_message" id="new_message" novalidate="novalidate" action="/fr/contact" accept-charset="UTF-8" method="post">
+      <input placeholder="Votre nom" type="text" name="message[name]" id="message_name">
+      <input placeholder="Votre email" type="text" name="message[email]" id="message_email">
+      <input placeholder="Votre numéro de téléphone" type="text" name="message[phone_number]" id="message_phone_number">
+      <textarea placeholder="Votre message" html="{:rows=>6}" name="message[body]" id="message_body"></textarea>
+
+      <input value="contact" type="hidden" name="message[site_location]" id="message_site_location">
+      <input type="submit" class="btn btn-flat" name="commit" value="Envoyer" data-disable-with="Envoyer" style="width: 100%;">
+    </form>  </div>
+  </div>
+
+
+  <div class="agency-alt-contact-info">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h4 style="color: #518dc3;">
+            <i class="fas fa-envelope"></i>
+            Email
+          </h4>
+          <p>
+            <a href="mailto:farm-square@outlook.fr">farm-square@outlook.fr</a>
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h4 style="color: #1877f2;">
+            <i class="fab fa-facebook-f"></i>
+            Facebook
+          </h4>
+          <p>
+            <a href="https://www.facebook.com/people/Farms-Squares/100068800493525/" target="_blank">@farmsquare</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>

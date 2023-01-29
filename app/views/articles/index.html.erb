@@ -1,0 +1,63 @@
+<div class="main-blog">
+
+  <div class="p-4 p-md-5 mb-4 text-white rounded banner-article">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 fst-italic" style="font-weight: bold;">Découvrez nos articles et soyez au courant de notre actualité</h1>
+      <div class="my-5">
+        <%= link_to "Rejoignez l'aventure", new_contact_path, class: "btn-flat btn btn-lg" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+<!--     <div data-aos="zoom-in" class="card mb-3">
+      <div class="row g-0">
+        <div class="col-md-8">
+          <img src="https://sloboda-studio.com/wp-content/uploads/2021/02/Group-598-1.jpg" class="card-img-top" alt="illustration featured article">
+        </div>
+        <div class="col featured-text">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div class="row row-cols-1 row-cols-md-3 g-4 group-cards-article">
+      <% @articles.each do |article| %>
+      <%= link_to article_path(article) do %>
+      <div data-aos="zoom-in-down" data-aos-duration="2000" class="col card-article">
+        <div class="card h-100">
+          <div class="card-footer">
+            <small class="text-muted">Le <%= article.updated_at %> par <%= article.user.email %>
+              <% if current_user && current_user.profil_id == 3 %>
+              <%= link_to "Modifier", edit_article_path(article) %>
+              <%= link_to "Supprimer", { action: :destroy, id: article.id }, method: :delete, data: { confirm: 'Êtes vous sûr(e)?' } %>
+              <% end %>
+            </small>
+          </div>
+          <% if article.picture.attached? %>
+          <%= cl_image_tag article.picture.key, class: "card-img-top", alt: "illustration article" %>
+          <% else %>
+          <img src="https://sloboda-studio.com/wp-content/uploads/2021/02/Group-598-1.jpg" class="card-img-top" alt="illustration article">
+          <% end %>
+          <div class="card-body">
+            <h5 class="card-title"><%= article.title %></h5>
+            <p class="card-text"> <%= article.content %> </p>
+          </div>
+        </div>
+      </div>
+      <% end %>
+      <% end %>
+    </div>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item">
+          <%= will_paginate @articles, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+</div>

@@ -1,0 +1,87 @@
+#pages-team {
+
+  .banner-team {
+    background-image: url(https://res.cloudinary.com/def2ukbdr/image/upload/v1623641604/farm-square/vertical-farm_xffdmh.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .bouton {
+    height: 40px;
+    width: 100px;
+    transition: all 0.2s;
+    border-radius: 8px;
+    border: 0.2px solid white;
+    background-color: rgba(167, 164, 158, 0.331);
+    color: white;
+    font-size: 16px;
+    margin-bottom: 0.1px;
+  }
+
+  .bouton:hover {
+    color: #000000;
+    background: linear-gradient(to right, #52b69a, #52b788, #74c69d, #95d5b2, #b7e4c7);
+  }
+
+  .card {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 5px 4px 20px #1b1f23;
+  }
+
+  .card-header:hover {
+    border-radius: 8px;
+    background: #299085;
+  }
+
+  .card span {
+    margin-left: 6px;
+  }
+
+  .collapse_card {
+    background-color: #fdfffc;
+  }
+
+  .button-membre {
+    font-weight: bold;
+    color: #52b69a;
+  }
+
+  .button-membre:hover {
+    color: white;
+  }
+
+  .button-membre img {
+    width: 140px;
+    height: 140px;
+    border-radius: 8px;
+  }
+
+  .rounded-circle {
+    width: 100px;
+    height: 100px
+  }
+
+  .team-presentation {
+    background-color: #02A181;
+    color: #E5E5E5;
+    box-shadow: 5px 4px 20px #1B1F23;
+    border-radius: 10px;
+  }
+
+  .devs a {
+    text-decoration: none;
+    color: #E5E5E5;
+  }
+
+  .popup-bio p:hover, .devs a:hover {
+    color: red;
+  }
+
+  .popup-bio img:hover, .popup-bio p:hover {
+    cursor: pointer;
+  }
+
+}

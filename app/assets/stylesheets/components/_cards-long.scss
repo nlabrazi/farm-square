@@ -1,0 +1,36 @@
+.text-card-long {
+  background-color: white;
+}
+
+.img-card-long {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-card1 {
+  background-image: url(https://i.imgur.com/cmOPNOs.jpg);
+}
+
+.img-card2 {
+  background-image: url(https://i.imgur.com/pT25kbH.jpg);
+}
+
+.img-card3 {
+  background-image: url(https://i.imgur.com/hTML9bH.jpg);
+}
+
+.img-right {
+  border-radius: 0 10px 10px 0;
+  box-shadow: 5px 5px 5px lightgrey;
+}
+
+.img-left {
+  border-radius: 10px 0 0 10px;
+  box-shadow: 5px 5px 5px lightgrey;
+}
+
+.long-card-all {
+  height: 300px;
+  margin-bottom: 6%;
+}

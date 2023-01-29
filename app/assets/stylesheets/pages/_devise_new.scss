@@ -1,0 +1,92 @@
+#sessions-new {
+
+  * {
+    text-align: center;
+  }
+
+  .content {
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    padding: 32px 93px 0;
+    max-width: 534px;
+    margin: 40px auto;
+    background-color: #02A181;
+    color: white;
+    box-shadow: #DEDADD;
+  }
+
+  .login {
+    padding-bottom: 49px;
+    font-size: 39px;
+    display: block;
+    /*font-family: Poppins-Bold;*/
+  }
+
+  .login-button-form {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .login-button-form input{
+      width: 100%;
+  }
+
+  .or {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .forgot {
+    margin-bottom: 30px;
+    padding-top: 30px;
+  }
+
+  .forgot a {
+    color: white;
+  }
+
+  .social-connector {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* [ Social item ] */
+
+  .login-social-item {
+    font-size: 25px;
+    color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+  }
+
+  .social-connector a {
+    text-decoration: none;
+  }
+
+  .login-social-item:hover {
+    color: #fff;
+    background-color: #333333;
+  }
+
+  .bg1 {
+    background-color: #3b5998;
+  }
+
+  .bg2 {
+    background-color: #1da1f2;
+  }
+
+  .bg3 {
+    background-color: #ea4335;
+  }
+
+}

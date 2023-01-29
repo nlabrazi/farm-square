@@ -1,0 +1,22 @@
+{
+  "name": "farm-square",
+  "private": true,
+  "dependencies": {
+    "@lottiefiles/lottie-player": "^1.6.3",
+    "@rails/actioncable": "^7.0.4-2",
+    "@rails/activestorage": "^7.0.4-2",
+    "@rails/ujs": "^7.0.4-2",
+    "@rails/webpacker": "5.4.3",
+    "aos": "^2.3.4",
+    "bootstrap": "^5.2.3",
+    "jquery": "^3.6.3",
+    "popper.js": "^1.16.1",
+    "turbolinks": "^5.2.0",
+    "font-awesome": "^4.7.0",
+    "font-awesome-sass": "^4.7.0"
+  },
+  "version": "0.1.0",
+  "devDependencies": {
+    "webpack-dev-server": "^4.11.1"
+  }
+}

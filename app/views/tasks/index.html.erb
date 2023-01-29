@@ -1,0 +1,31 @@
+<div class="p-4 p-md-5 mb-4 text-white rounded banner-team">
+  <div class="col-md-6 px-0">
+    <h1 class="display-4 fst-italic">Liste des tâches</h1>
+
+    <div class="d-flex mt-5">
+      <div class="dropdown">
+        <button class="btn dropdown-toggle btn-dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Rechercher par villes
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <% @cities.each do |city| %>  
+          <%= link_to city.name, tasks_path(params:{query: params[:query], order: city.name}), class:"dropdown-item", remote: true %>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="home-searchbar">
+        <%= form_tag tasks_path, class: "form-inline d-flex justify-content-center md-form form-sm active-cyan-2 ", method: :get do %>
+          <%= text_field_tag :query, params[:query], class: "form-control mr-3 w-50", placeholder:"Rechercher par missions ..."%>
+        <% end %>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container">
+  <div class="cards-product">
+    <%= render 'card', tasks: @tasks %>
+  </div>
+</div>

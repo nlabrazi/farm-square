@@ -1,0 +1,5 @@
+meta_product_name: "Farm-Square"
+meta_title: "Farm-Square - Présentation"
+meta_description: "Farm-Square - L'agriculture mais en mieux!"
+meta_image: "farm-meta.jpg" # should exist in `app/assets/images/`
+twitter_account: "@Nabs"   # required for Twitter Cards

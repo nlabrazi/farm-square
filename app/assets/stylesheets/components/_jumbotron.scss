@@ -1,0 +1,31 @@
+.JumbotronDisplay {
+  background-image: url(https://res.cloudinary.com/def2ukbdr/image/upload/v1623641444/farm-square/homepage-danemark_ocxmma.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 800px;
+  min-width: 100%;
+  margin: 0;
+
+  h1,
+  h3 {
+    color: white;
+  }
+  .cta:hover {
+    color: #e57c00;
+  }
+}
+
+
+.Jumbotron_col {
+  margin-top: 300px;
+}
+
+
+/*
+    opacity: 0.2;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://i.imgur.com/dmiSeDv.jpg);
+*/
