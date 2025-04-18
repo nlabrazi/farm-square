@@ -9,14 +9,18 @@
     "@rails/webpacker": "5.4.3",
     "aos": "^2.3.4",
     "bootstrap": "^5.2.3",
+    "font-awesome": "^4.7.0",
+    "font-awesome-sass": "^4.7.0",
     "jquery": "^3.6.3",
     "popper.js": "^1.16.1",
-    "turbolinks": "^5.2.0",
-    "font-awesome": "^4.7.0",
-    "font-awesome-sass": "^4.7.0"
+    "rails_admin": "3.1.1",
+    "turbolinks": "^5.2.0"
   },
   "version": "0.1.0",
   "devDependencies": {
     "webpack-dev-server": "^4.11.1"
+  },
+  "resolutions": {
+    "rails_admin/@fortawesome/fontawesome-free": "^5.15.0"
   }
 }
